@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #20263d;
+  background-color: white;
+}
+
+.header {
+  height: 100px;
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.logo-dsa {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #20263d;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo-img {
+  width: 52px;
+  height: 52px;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+}
+
+.navbar-items a {
+  color: #506079;
+  font-size: 18px;
+}
+
+.header-start-btn button {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 10px;
+  background-color: #5127d8;
+  color: white;
+  font-size: 18px;
+}
+
+main {
+  background-color: white;
+}
+
+.hero {
+  min-height: 600px;
+  padding: 40px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-texts {
+  width: 50%;
+}
+
+.hero-heading h1 {
+  color: #20263d;
+  font-size: 52px;
+  line-height: 1.1;
+}
+
+.hero-para {
+  max-width: 600px;
+  margin-top: 30px;
+  color: #617087;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.hero-texts button {
+  margin-top: 35px;
+  padding: 18px 24px;
+  border: 2px solid #5127d8;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.hero-texts button:first-of-type {
+  background-color: #5127d8;
+  color: white;
+}
+
+.hero-texts button:last-of-type {
+  margin-left: 16px;
+  background-color: white;
+  color: #5127d8;
+}
+
+.startpracticing-arrow {
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+.student-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.cards {
+  padding: 48px 6%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: #f7f8fb;
+    flex-direction: row;
+  padding: 35px 5%;
+  gap: 15px;
+}
+
+.card-block {
+  width: 33%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  border-radius: 15px;
+}
+
+.cardimg {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.card-heading {
+  margin-top: 4px;
+  color: #20232c;
+  font-size: 26px;
+}
+
+.card-block > p:last-child {
+  margin-top: 16px;
+  color: #59657a;
+  font-size: 18px;
+  
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .header {
+    height: auto;
+    padding: 20px 5%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .navbar-items {
+    gap: 20px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 50px 5%;
+  }
+
+  .hero-heading h1 {
+
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .navbar-items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .hero {
+    flex-direction: column;
+    
+  }
+
+  .hero-texts,
+  .student-image {
+    width: 100%;
+  }
+
+  .hero-heading h1 {
+    font-size: 36px;
+  }
+
+  .hero-texts button:last-of-type {
+    margin-left: 0;
+  }
+
+
+  .card-block {
+    width: 100%;
+  }
+}
